@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gaurav.doordiecontroller.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="jump"
+            android:id="@+id/jump"
+            android:onClick="onClick"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:background="#6d6d6d"
+            android:textSize="@dimen/mytestsize"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/fire"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="fire"
+                android:onClick="onClick"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:textSize="@dimen/mytestsize"
+                android:textColor="#fc940c" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="bomb"
+                android:id="@+id/bomb"
+                android:layout_alignTop="@+id/fire"
+                android:background="#000000"
+                android:onClick="onClick"
+                android:layout_weight="1"
+                android:layout_alignEnd="@+id/jump"
+                android:textSize="@dimen/mytestsize"
+                android:textColor="#ffe818" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
